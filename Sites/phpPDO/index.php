@@ -15,7 +15,7 @@ try{
     $conexao = new \PDO("mysql:host=localhost;dbname=pdo", "root", "1234");
     
     /*
-     * 
+     * Executando Insert
     $query = "insert into clientes(nome, email) values('Pedro', 'pedro@idnadevendas.com.br')";
     
     $resultado = $conexao->exec($query);
@@ -35,6 +35,8 @@ try{
     foreach ($resultado as $cliente){
         echo $cliente->nome."<BR />";
     }
+    
+    
     
 }  
 catch (\PDOException $e){
